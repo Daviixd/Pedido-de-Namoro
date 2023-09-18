@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceita namorar comigo comigo?</title>
+    <style>
+        body {
+            background-color: rgb(115, 62, 212);
+        }
+
+        .painel {
+            margin: auto;
+            background-color: rgb(228, 124, 141);
+            width: 700px;
+            height: 650px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,
+        }
+
+        #sim {
+            height: 40px;
+            width: 60px;
+            background-color: rgba(15, 15, 161, 0.366);
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #nao {
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: rgba(15, 15, 161, 0.366);
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="painel">
+        <img src="imagem.jpg" height="400" width="400">
+        <h1> <img src="heart.png" width="50"> Aceita namorar comigo? <img src="heart.png" width="40"> </h1>
+
+
+
+
+        <a href="https://youtu.be/IYOCEqithG4"><button id="sim"> Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+
+    </div>
+
+    <script>
+
+        function fuja() {
+            var botaoNao = document.getElementById("nao")
+
+            let larguraJanela = window.innerWidth;
+            let alturaJanela = window.innerHeight;
+
+            let maxX = larguraJanela - botaoNao.offsetWidth;
+            let maxY = alturaJanela - botaoNao.offsetHeight;
+
+            let aleatorioX = Math.floor(Math.random() * maxX);
+            let aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+            parametro
+        }
+    </script>
+
+
+</body>
+
+</html>
